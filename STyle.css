@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top , #cfd9df , #e2ebf0);
+  padding: 10px;
+}
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 150px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 50px;
+  box-shadow: 0 0 30px #afafaf;
+}
+h2{
+  color: #002765;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+h2 img{
+  width: 40px;
+  position: absolute;
+  right: 0;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 3px groove #000;
+  outline-offset: 5px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #5d5d5d;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px;
+
+}
+input::placeholder{
+  color: #1e008d;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 30px;
+  background-color: #26068f;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 1px;
+}
+.todo-app ul{
+  position: relative;
+  background-color: lightcoral;
+  border-radius: 60px;
+  color: #fff;
+  font-size: 19px;
+  text-align: left;
+  
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 500;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  margin-block: 10px;
+
+}
+/* ul li::before{
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+   background-size: cover;background: url(https://icons.veryicon.com/png/o/miscellaneous/questionnaire-icon/unchecked-10.png);
+ 
+  color: #fff;
+  position: center;
+  top: 12px;
+  left: 8px;
+
+} */
+
+ul li.checked{
+  background-color: #3700a4;
+  color: white;
+  border-radius: 50px;
+}
+
+ul li.checked::before{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXKoH5YS4ckLkXPB9FmiXW9EiCSeqC3UTUnA&s);
+  background-size: cover;
+}
+
+ul li span{
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+ul li .checked span{
+  color: #fff;
+}
+
+ul li .checked span:hover{
+  background: #fff;
+  color: #000;
+}
+.todo-app .button{
+  padding: 50px 0;
+}
+
+.todo-app .btn {
+  padding: 12px;
+  background: #3700a4;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.todo-app .btn:hover{
+  background-color: blanchedalmond;
+
+  color: black;
+  border-color: black;
+  
+
+}
+
+.
